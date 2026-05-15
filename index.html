@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Triven Hub</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Dynamic Content injected here -->
+        <div id="root"></div>
+        <div id="notification-container"></div>
+
+        <!-- Bottom Navigation Shell -->
+        <nav id="bottom-nav" class="hidden">
+            <button class="nav-item active" data-tab="home">
+                <i class="ri-home-5-line"></i>
+                <i class="ri-home-5-fill active-icon"></i>
+                <span>Home</span>
+            </button>
+            <button class="nav-item" data-tab="orders">
+                <i class="ri-file-list-3-line"></i>
+                <i class="ri-file-list-3-fill active-icon"></i>
+                <span>Orders</span>
+            </button>
+            <button class="nav-item hidden" id="nav-sell-tab" data-tab="sell">
+                <i class="ri-add-box-line"></i>
+                <i class="ri-add-box-fill active-icon"></i>
+                <span>Sell</span>
+            </button>
+            <button class="nav-item" data-tab="wallet">
+                <i class="ri-wallet-3-line"></i>
+                <i class="ri-wallet-3-fill active-icon"></i>
+                <span>Wallet</span>
+            </button>
+            <button class="nav-item" data-tab="profile">
+                <i class="ri-user-3-line"></i>
+                <i class="ri-user-3-fill active-icon"></i>
+                <span>Profile</span>
+            </button>
+        </nav>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
